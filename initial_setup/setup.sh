@@ -11,5 +11,5 @@ cat /etc/systemd/system/docker.service.d/http_proxy.conf
 systemctl daemon-reload
 systemctl restart docker
 
-docker image pull orangefolder/crcmon_flask
-docker image pull orangefolder/crcmon_nginx
+docker image pull orangefolder/crcmon_flask:1.0
+docker image pull orangefolder/crcmon_nginx:1.0
