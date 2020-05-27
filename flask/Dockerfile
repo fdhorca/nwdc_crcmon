@@ -8,7 +8,7 @@ WORKDIR /app
 COPY . /app
 
 # Install dependencies
-RUN pip3 install --proxy http://muc1-prxy.sdi.trendnet.org:8080/ -r requirements.txt
+RUN pip3 install --proxy http://sjc1-prxy.sdi.trendnet.org:8080/ -r requirements.txt
 
 #Command to start uWSGI
 CMD ["uwsgi", "app.ini"]
