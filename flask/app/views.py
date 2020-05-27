@@ -6,7 +6,7 @@ import re, json, time
 tacacs_username = "justinef"
 tacacs_password = "V4swPPme$$$"
 
-crc_threshold = 100
+crc_threshold = 1000
 
 
 def compre_threshold(crc_count):
