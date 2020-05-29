@@ -3,7 +3,7 @@ version: "3.7"
 services:
 
     flask:
-        image: orangefolder/crcmon_flask:1.0
+        image: orangefolder/crcmon_flask:1.1
         environment:
             - APP_NAME=crcmonApp
         expose:
@@ -11,9 +11,9 @@ services:
         networks:
             - crcmonNet
         deploy:
-            replicas: 20
+            replicas: 10
             update_config:
-                parallelism: 4
+                parallelism: 2
             restart_policy:
                 condition: on-failure
 
@@ -24,9 +24,9 @@ services:
         ports:
             - "80:80"
         deploy:
-            replicas: 5
+            replicas: 2
             update_config:
-                parallelism: 2
+                parallelism: 1
             restart_policy:
                 condition: on-failure
 
