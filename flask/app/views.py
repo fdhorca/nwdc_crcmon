@@ -3,8 +3,8 @@ from app import app
 from netmiko import ConnectHandler
 import re, json, time
 
-tacacs_username = "justinef"
-tacacs_password = "V4swPPme$$$"
+tacacs_username = "francish"
+tacacs_password = "ASDqwe123@@"
 
 crc_threshold = 1000
 
